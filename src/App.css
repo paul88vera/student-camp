@@ -1,0 +1,473 @@
+:root {
+  --main-bg-color: #000;
+  --main-txt-color: #000;
+  --sec-txt-color: #fff;
+  --sec-bg-color: #fff;
+  --tertiary-bg-color: #ececec;
+  --tertiary-txt-color: #0fa3b1;
+}
+.App {
+  scroll-behavior: smooth;
+  transition: all 0.3s ease-in-out;
+  background-image: url("https://www.communitybible.com/wp-content/uploads/2023/03/bg_test-SC.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.title {
+  font-size: 34px;
+}
+p {
+  font-size: 1.2rem;
+}
+button:focus {
+  outline: none;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+/*---------------------------
+      SUBNAV - Start
+-----------------------------*/
+#subnav-sc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: var(--main-bg-color);
+  color: var(--sec-txt-color);
+  padding: 2em 0;
+  margin-top: -5px;
+  gap: 2em;
+  font-size: 1.2rem;
+}
+#subnav-sc a {
+  color: var(--sec-txt-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: scroll-behavior 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  scroll-behavior: smooth;
+}
+#subnav-sc a:hover {
+  color: var(--tertiary-txt-color);
+}
+/*---------------------------
+      HEADER - Start
+-----------------------------*/
+#sc-header {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+}
+.header-desktop {
+  display: none;
+}
+.header-mobile {
+  display: block;
+}
+/*---------------------------
+      CAROUSEL - Start
+-----------------------------*/
+#carousel-sc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 6em 1em;
+  gap: 4em;
+}
+.carousel-sc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 300px;
+  height: 100%;
+}
+.carousel-btn {
+  border: none;
+  border-radius: 25px;
+  background-color: transparent;
+  border: rgb(151, 215, 255, 0.9) solid 2px;
+  color: rgb(170, 220, 250);
+  font-weight: 500;
+  min-width: 150px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.3em;
+}
+.carousel-btn:hover {
+  background-color: transparent;
+  border: rgb(151, 215, 255, 0.9) solid 2px;
+}
+.middle-title {
+  font-size: 2.5rem;
+  font-variant: small-caps;
+  font-weight: 900;
+  color: yellow;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.carousel-sc-desc {
+  height: 214px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.sc-img-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 10px;
+}
+.carousel-sc-img {
+  z-index: 2;
+  position: relative;
+  right: -10px;
+}
+.register-title {
+  font-size: 1.2rem;
+  color: rgb(13 99 142);
+  font-family: "Hanken Grotesk", sans-serif;
+}
+/*---------------------------
+      VOLUNTEER - Start
+-----------------------------*/
+#volunteer-sc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 1em 7em 1em;
+}
+.vol-container {
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 0.5em;
+}
+.vol-sc-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 730px;
+}
+.vol-sc-title,
+.schedule-sc-title,
+.faq-sc-title {
+  color: yellow;
+  font-weight: 800;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 2.5em;
+  margin: 0.5em 0;
+  font-variant: small-caps;
+}
+.vol-sc-title {
+  margin-bottom: 0px;
+}
+.vol-sc-para {
+  max-width: 600px;
+  color: #fff;
+  margin: 0;
+}
+.vol-sc-right {
+  margin-right: 2em;
+}
+.vol-img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 1em;
+  opacity: 100%;
+  box-sizing: border-box;
+}
+.vol-img-img {
+  width: 100%;
+}
+.vol-img-container {
+  display: flex;
+  justify-content: center;
+}
+.img-center {
+  cursor: pointer;
+}
+.img-left {
+  position: absolute;
+  rotate: 0deg;
+  right: 0px;
+  top: 0px;
+  width: 0%;
+  max-width: 320px;
+}
+.img-right {
+  position: absolute;
+  rotate: 0deg;
+  right: 0px;
+  top: 0px;
+  width: 0%;
+  max-width: 320px;
+}
+.vol-sc-para-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.vol-register-btn {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(151, 215, 255, 0.9);
+  border: rgb(151, 215, 255, 0.9) 2px solid;
+  border-radius: 50px;
+  padding: 1em 2em;
+  font-weight: 600;
+  text-align: center;
+  max-width: 250px;
+  width: 100%;
+}
+.vol-register-btn:hover {
+  background-color: rgb(151, 215, 255, 0.3);
+  color: #fff;
+}
+.vol-learn-btn {
+  margin-top: -10px;
+  color: #fff;
+  text-decoration: none;
+  border: rgb(151, 215, 255, 0.9) 2px solid;
+  border-radius: 50px;
+  padding: 1em 2em;
+  font-weight: 600;
+  text-align: center;
+}
+.vol-learn-btn:hover {
+  color: rgb(170, 220, 250);
+}
+/*---------------------------
+      SCHEDULE - Start
+-----------------------------*/
+#schedule-sc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 1em 6em;
+}
+.schedule-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.card-img {
+  width: 100%;
+  max-width: 360px;
+}
+.schedule-card {
+  scale: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.schedule-card:hover {
+  scale: 103%;
+  transition: all 0.3s ease-in-out;
+}
+.event-schedule {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+.event {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  text-align: left;
+  color: #fff;
+  font-weight: 500;
+  padding: 0 0.2rem;
+  line-height: 1.5rem;
+}
+.event-time {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: right;
+  color: rgb(13 99 142);
+  line-height: 1.5rem;
+  padding: 0 0.1rem;
+}
+/*---------------------------
+      FAQ - Start
+-----------------------------*/
+#faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 4em 1em;
+  margin-bottom: 4em;
+  gap: 1em;
+  color: rgb(13 99 142);
+}
+.faq-container {
+  width: 100%;
+  max-width: 1200px;
+  transform: translateY(0);
+  transition: 0.3s transform, 0.3s box-shadow ease-in-out;
+}
+.faq-titles {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.faq-question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-weight: 900;
+  padding: 1em 3em;
+  text-align: left;
+  background-color: var(--sec-bg-color);
+  border-radius: 10px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.faq-container:hover {
+  -webkit-box-shadow: 0px 0px 35px #515151;
+  box-shadow: 0px 0px 35px #515151;
+  transform: translateY(-10px);
+  transition: 0.3s transform, 0.3s box-shadow ease-in-out;
+  cursor: pointer;
+}
+.chevron-collapsed {
+  transform: rotate(0);
+  transition: transform 0.5s;
+}
+.chevron-open {
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+}
+.faq-answer {
+  max-width: 1200px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  background-color: var(--sec-bg-color);
+  padding: 0.5em 3em;
+  margin-top: 0.2em;
+  -webkit-box-shadow: 0px 0px 25px #515151;
+  box-shadow: 0px 0px 25px #515151;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+/*--------------------------
+      MEDIA QUIERIES
+---------------------------*/
+@media screen and (min-width: 567px) {
+  #subnav-sc {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    padding: 2em 0;
+  }
+  .vol-img {
+    height: 500px;
+    width: 100%;
+    max-width: 450px;
+    margin-right: 1em;
+    position: relative;
+  }
+  .vol-sc-para {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+  }
+  .vol-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .schedule-card-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  .header-desktop {
+    display: block;
+  }
+  .header-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .faq-container {
+    width: 100%;
+    max-width: 1000px;
+  }
+  .vol-sc-container {
+    flex-wrap: nowrap;
+  }
+  #volunteer-sc {
+    padding: 4em 2em 15em 2em;
+  }
+  #volunteer-sc::after {
+    left: 600px;
+    transition: all 0.3s ease-in-out;
+  }
+  #carousel-sc::after {
+    left: -200px;
+    transition: all 0.3s ease-in-out;
+  }
+  .vol-img {
+    width: 100%;
+    max-width: 700px;
+    margin-right: 30em;
+  }
+  .vol-sc-para {
+    position: relative;
+    top: 60px;
+    min-width: 320px;
+  }
+  .schedule-card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .img-left {
+    position: absolute;
+    rotate: -5deg;
+    right: 40px;
+    top: 30px;
+    width: 100%;
+    max-width: 450px;
+    cursor: pointer;
+  }
+  .img-right {
+    position: absolute;
+    rotate: 7deg;
+    right: -20px;
+    top: 30px;
+    width: 100%;
+    max-width: 450px;
+    cursor: pointer;
+  }
+  .vol-sc-title {
+    margin-bottom: -80px;
+  }
+}
+@media screen and (min-width: 968px) {
+  .schedule-card-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+    transition: all 0.3s ease-in-out;
+  }
+}
